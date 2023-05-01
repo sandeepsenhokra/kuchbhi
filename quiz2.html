@@ -1,0 +1,175 @@
+<html>
+    <head>
+          <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+     var score =0;
+    
+function next1(){
+   var value=document.querySelector('input[name="a"]:checked').value;
+         console.log(this.score);
+       if(value==null){
+        alert('Please select one Option');
+        }else{
+              alert(value);		
+                     document.getElementById('screen1').style.display='none';
+                     document.getElementById('screen2').style.display='block';
+					 }
+			if(value == '3'){
+            console.log(value);
+					this.score= score+10;
+				}
+                }  
+function next2(){
+   var value1=document.querySelector('input[name="a"]:checked').value;
+   console.log(this.score);
+   
+       if(value1==null){
+        alert('Please select one Option');
+        }else{
+              alert(value1);		
+document.getElementById('screen1').style.display = 'none';
+document.getElementById('screen2').style.display = 'none';
+document.getElementById('screen3').style.display = 'block';
+}
+			if(value1 == '2'){
+					this.score =score+10;
+				}
+}
+function next3(){
+   var value2=document.querySelector('input[name="a"]:checked').value;
+   console.log(this.score);
+       if(value2==null){
+        alert('Please select one Option');
+        }else{
+              alert(value2);		
+document.getElementById('screen1').style.display = 'none';
+document.getElementById('screen2').style.display = 'none';
+document.getElementById('screen3').style.display = 'none';
+document.getElementById('screen4').style.display = 'block';
+}
+			if(value2 == '4'){
+					this.score =score+10;
+				}
+}
+function next4(){
+   var value3=document.querySelector('input[name="a"]:checked').value;
+       if(value3==null){
+        alert('Please select one Option');
+        }else{
+              alert(value3);		
+document.getElementById('screen1').style.display = 'none';
+document.getElementById('screen2').style.display = 'none';
+document.getElementById('screen3').style.display = 'none';
+document.getElementById('screen4').style.display = 'none';
+document.getElementById('screen5').style.display = 'block';
+}
+			if(value3 == '1'){
+            this.score =score+10;   
+				}
+}
+function next5(){
+   var value4=document.querySelector('input[name="a"]:checked').value;
+       if(value4==null){
+        alert('Please select one Option');
+        }else{
+              alert(value4);		
+document.getElementById('screen1').style.display = 'none';
+document.getElementById('screen2').style.display = 'none';
+document.getElementById('screen3').style.display = 'none';
+document.getElementById('screen4').style.display = 'none';
+document.getElementById('screen5').style.display = 'none';
+document.getElementById('screen6').style.display = 'block';
+}
+			if(value4 == '2'){
+            this.score =score+10;   
+				}
+				document.write("Score="+this.score+"/50");			
+}	
+  </script>
+    </head>
+    <body style="background:green;">
+	<div id="screen1">
+           <div style="text-align:center;">
+		<br/><h3 style="color:#00BFFF;background:yellow;">1.What is full form of HTML ?</h3>
+		</div>
+		<br/>
+		<div style="color:#FFD700;">
+<input type="radio" f32 rname="a" value="1">Hyper text language</input><br/><br/>
+<input type="radio" name="a" value="2">Markap language</input><br/><br/>
+<input type="radio" name="a" value="3">Hyper Text Markup Language</input><br/><br/>	
+<input type="radio" name="a" value="4">Hyper Text Markup</input><br/><br/>
+</div>
+   <div style="text-align:center;">
+<button type="button" class="btn btn-danger" onclick="next1();">Next</button>
+</div>
+</div>
+<div id="screen2" style="display:none;">
+<div style="text-align:center;">
+		<br/><h3 style="color:#00BFFF;background:yellow;">2.What is full form of CSS?</h3>
+		</div>
+		<br/>
+		<div style="color:#FFD700;">
+<input type="radio" name="a" value="1">Card Style sheets</input><br/><br/>
+<input type="radio" name="a" value="2">Cascading style sheets</input><br/><br/>
+<input type="radio" name="a" value="3">Style sheets</input><br/><br/>	
+<input type="radio" name="a" value="4">Cascading langauge</input><br/><br/>
+</div>
+   <div style="text-align:center;">
+<button type="button" class="btn btn-danger" onclick="next2();">Next </button>
+</div>
+</div>
+<div id="screen3" style="display:none;">
+<div style="text-align:center;">
+		<br/><h3 style="color:#00BFFF;background:yellow;">3.Who is the prime minister of india?</h3>
+		</div>
+		<br/>
+		<div style="color:#FFD700;">
+<input type="radio" name="a" value="1">Mr. Arvind Kegariwal </input><br/><br/>
+<input type="radio" name="a" value="2">Mr.Amit shah</input><br/><br/>
+<input type="radio" name="a" value="3">Mr. Adhityanath Yogi</input><br/><br/>	
+<input type="radio" name="a" value="4">Mr Nahendra Modi</input><br/><br/>
+</div>
+   <div style="text-align:center;">
+<button type="button" class="btn btn-danger" onclick="next3();">Next </button>
+</div>
+</div>
+<div id="screen4" style="display:none;">
+<div style="text-align:center;">
+		<br/><h3 style="color:#00BFFF;background:yellow;">4.Who is the father of computer?</h3>
+		</div>
+		<br/>
+		<div style="color:#FFD700;">
+<input type="radio" name="a" value="1">charless Babbage</input><br/><br/>
+<input type="radio" name="a" value="2">john hedhrik</input><br/><br/>
+<input type="radio" name="a" value="3">karlmakes</input><br/><br/>	
+<input type="radio" name="a" value="4">Jashmin Babbage</input><br/><br/>
+</div>
+   <div style="text-align:center;">
+<button type="button" class="btn btn-danger" onclick="next4();">Next </button>
+</div>
+</div>
+<div id="screen5" style="display:none;">
+<div style="text-align:center;">
+		<br/><h3 style="color:#00BFFF;background:yellow;">5.When was the computer invented?</h3>
+		</div>
+		<br/>
+		<div style="color:#FFD700;">
+<input type="radio" name="a" value="1">1809</input><br/><br/>
+<input type="radio" name="a" value="2">1822</input><br/><br/>
+<input type="radio" name="a" value="3">1880</input><br/><br/>	
+<input type="radio" name="a" value="4">1910</input><br/><br/>
+</div>
+   <div style="text-align:center;">
+<button type="button" class="btn btn-danger" onclick="next5();">Result</button>
+</div>
+</div>
+<div id="screen6" style="display:none;">
+<div style="text-align:center;">
+</div>
+</div>
+    </body>
+</html>

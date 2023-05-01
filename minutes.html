@@ -1,0 +1,31 @@
+<html>
+    <head>
+    </head>
+    <body>
+	    <span id = "hour"></span> hours
+        <span id = "min"></span>minutes
+        <span id = "sec"></span>seconds
+ <script>
+var sec = 0;
+var min = 0;
+var hour = 0;
+const second = document.getElementById("sec");
+const minut = document.getElementById("min");
+const hours = document.getElementById("hour");
+setInterval(function(){
+sec++;
+if(sec == 60){
+min++;
+if(min== 60){
+hour++;
+hours.innerHTML=hour;
+min=0;
+}
+minut.innerHTML=min;
+sec=0;
+}
+second.innerHTML=sec;},1000);        
+        </script>
+
+    </body>
+</html>

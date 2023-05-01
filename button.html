@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+        <script>
+            function sum(){
+                var firstNumber = document.getElementById('firstNumber').value;
+                var secondNumber = document.getElementById('secondNumber').value;
+                document.getElementById('result').innerHTML = parseInt(firstNumber) + parseInt(secondNumber);
+            }
+            function sub(){
+                var firstNumber = document.getElementById('firstNumber').value;
+                var secondNumber = document.getElementById('secondNumber').value;
+                document.getElementById('result').innerHTML = parseInt(firstNumber) - parseInt(secondNumber);
+            }
+            function multi(){
+                 var firstNumber = document.getElementById('firstNumber').value;
+                 var secondNumber = document.getElementById('secondNumber').value;
+                 document.getElementById('result').innerHTML = parseInt(firstNumber) * parseInt(secondNumber);
+            }
+
+            function divide(){
+                 var firstNumber = document.getElementById('firstNumber').value;
+                 var secondNumber = document.getElementById('secondNumber').value;
+                 document.getElementById('result').innerHTML = parseInt(firstNumber) / parseInt(secondNumber);
+            }
+        </script>
+    </head>
+    <body>
+     <table>
+      <tr>
+      <td>  First Number: </td>
+      <td><input type="number" id="firstNumber"></td>
+      </tr>
+      <tr>
+        <td> Second Number:</td>
+        <td> <input type="number" id="secondNumber"></td>
+      </tr>  
+      </table>
+       Enter  Your a task:
+        <button onclick="sum();">Add</button>
+        <button onclick="sub();">sub</button>
+        <button onclick="multi();">multi</button>
+        <button onclick="divide()">divi</button>
+        <br>
+         Result : <p id="result"></p>
+    </body>
+</html>

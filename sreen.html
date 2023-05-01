@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            input{
+                width:100%;
+            }
+        </style>
+        <script>
+            function nextScreen(){
+                document.getElementById('screen1').style.display = 'none';
+                document.getElementById('screen2').style.display = 'block';
+				 document.getElementById('screen3').style.display = 'none';
+            }
+            function prevScreen(){
+                document.getElementById('screen3').style.display = 'none';
+                document.getElementById('screen2').style.display = 'block';
+				 document.getElementById('screen1').style.display = 'none';
+            }
+			function nextprevScreen(){
+                document.getElementById('screen2').style.display = 'none';
+                document.getElementById('screen3').style.display = 'block';
+				 document.getElementById('screen1').style.display = 'none';
+            }
+			function prevnextScreen(){
+                document.getElementById('screen2').style.display = 'none';
+                document.getElementById('screen3').style.display = 'none';
+				 document.getElementById('screen1').style.display = 'block';
+            }
+        </script>
+    </head>
+    <body>
+        <div id="screen1">
+            <div style="text-align:center;"><h1>screen 1</h1></div>
+            Name <input type="text" /> <br /><br />
+           
+            <div style="text-align:right;">
+                <button onclick="nextScreen();">Next</button>
+            </div>
+        </div>
+        <div id="screen2" style="display:none;">
+            <div style="text-align:center;"><h1>screen 2</h1></div>
+          
+            class <input type="number" /> <br /><br />
+            <div style="text-align:left;">
+                <button onclick="prevnextScreen();">Prev</button>
+			  </div>
+			  
+			 <div style="text-align:right;">
+                <button onclick="nextprevScreen();">next</button>
+				 </div>
+				 </div>
+				 <div id="screen3" style="display:none;">
+            <div style="text-align:center;"><h1>screen 3</h1></div>
+            Roll no. <input type="number" /> <br /><br />
+           
+            <div style="text-align:left;">
+                <button onclick="prevScreen();">prev</button>
+            </div>
+        </div>
+       
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+<head>
+<script>
+function add(){
+     document.getElementById('list').innerHTML += '<li>'+document.getElementById('taskname').value+'</li>';
+	 }
+	 </script>
+</head>
+<body>
+Task Name <input type="text" id="taskname"/>
+<button onclick="add();">Add</button>
+<ol id="list">
+  
+</ol>
+</body>
+</html>

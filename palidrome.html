@@ -1,0 +1,40 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var s, r ,sum=0, num;
+    var s=prompt("enter number");
+num = s;
+while(s>0)
+    {
+        r=s%10;
+        sum=r+(sum*10);
+        s=parseInt(s/10);
+    }
+if(num==sum)
+{
+    document.write("palindrome number");
+}
+else
+{
+    document.write("not palindrome number");
+}
+        </script>
+    </body>
+</html>
+
+
+===================================================================
+
+<html>
+    <head>
+        <script>
+            let fact=1,i;
+            var num=prompt(num);
+            for(i=num;i>=1;i--)
+            fact= fact*i;
+            document.write(fact);
+            </script>
+     </head>       
+</html>   
